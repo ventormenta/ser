@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>HOGAR 24X7 Reservas</title>
+    <link rel="stylesheet" href="css/estilos.css" />
+  </head>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
+  <body>
+
+    <form action="" class="formulario">
+      <img src="logo.jpg" class="imgLogo" />
+
+      <h1 class="formulario__titulo">Reservas</h1>
+      <h3 class="formulario__subtitulo"> Completá por favor el formulario y agendá tu cita.</h3>
+      
+<p class="formulario__titulo">
+  <a href="https://tecnotuc.com.ar/"><FONT SIZE=4>VOLVER A LA WEB</FONT></a>
+</p>
+      <label for="cliente" class="formulario__label">Nombre de la empresa</label>
+      <input
+        id="cliente"
+        type="text"
+        class="formulario__input"
+        placeholder="Nombre de la empresa"
+
+      />
+
+      <label for="fecha" class="formulario__label"
+        >Indicá la fecha de tu reserva</label
+      >
+      <input
+        id="fecha"
+        type="date"
+        class="formulario__input"
+
+      />
+
+      <label for="hora" class="formulario__label"
+        >Eligí una franja Horaria</label
+      >
+      <select id="hora" name="hora" class="formulario__input">
+        <option>06 A 12</option>
+        <option>12 A 18</option>
+        <option>18 A 24</option>
+        <option>24 A 06</option>
+      </select>
+
+      <label for="domicilio" class="formulario__label"
+        >Domicilio</label
+      >
+        <input
+          id="domicilio"
+          type="text"
+          class="formulario__input"
+          placeholder="Indica cuál es tu domicilio"
+
+        />
+      </select>
+
+      <label for="Localidad" class="formulario__label"
+        >Localidad</label
+      >
+      <select id="Localidad" name="listaLocalidad" class="formulario__input">
+        <option>SAN MIGUEL DE TUCUMAN</option>
+        <option>YERBA BUENA</option>
+        <option>BANDA DEL RIO SALI</option>
+        <option>TAFI VIEJO</option>
+        <option>OTROS</option>
+      </select>
+
+      <label for="servicio" class="formulario__label"
+        >¿Cuál es el servicio que desea?</label
+      >
+      <select id="servicio" name="listaservicios" class="formulario__input">
+  <option>ALBAÑILES</option>
+    <option>CARPINTEROS</option>
+    <option>CERRAJEROS</option>
+      <option>DURLOCK</option>
+        <option>ELECTRICISTAS</option>
+          <option>GASISTAS</option>
+            <option>HERREROS</option>
+              <option>PLOMEROS</option>
+              <option>PINTORES</option>
+              <option>REDES</option>
+                 <option>REFRIGERACION</option>
+                 <option>VIDRIERIAS</option>
+                 </select>
+
+                 
+
+      <div id="respuesta"></div>
+      <button id="submit" class="formulario__submit">Enviar a WhatsApp</button>
+    </form>
+    <script src="js/form.js"></script>
+  </body>
+  <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
+<script>
+window.cookieconsent.initialise({
+  "palette": {
+    "popup": {
+      "background": "#237afc"
+    },
+    "button": {
+      "background": "#fff",
+      "text": "#237afc"
+    }
+  },
+  "theme": "classic",
+  "content": {
+    "message": "Este sitio web utiliza cookies para garantizar que obtenga la mejor experiencia en nuestro sitio web.",
+    "dismiss": "Aceptar",
+    "link": "leer más",
+    "href": "cookies24x7.pdf"
+  }
+});
+</script>
+</html>
